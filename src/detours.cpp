@@ -1329,7 +1329,7 @@ static PVOID detour_alloc_region_from_hi(PBYTE pbLo, PBYTE pbHi)
             pbTry -= DETOUR_REGION_SIZE;
         }
         else {
-            pbTry = detour_alloc_round_down_to_region((PBYTE)mbi.AllocationBase
+            pbTry = detour_alloc_round_down_to_region((PBYTE)mbi.BaseAddress
                                                       - DETOUR_REGION_SIZE);
         }
     }
